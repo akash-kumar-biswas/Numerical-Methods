@@ -2,12 +2,7 @@
 
 using namespace std;
 
-void calculateSums(vector<double>& x,vector<double>& y, double& sumX, double& sumY, double& sumX2, double& sumXY) {
-    sumX = 0;
-    sumY = 0;
-    sumX2 = 0;
-    sumXY = 0;
-    
+void calculateSums(vector<double>& x,vector<double>& y, double& sumX, double& sumY, double& sumX2, double& sumXY) { 
     int n = x.size();
     for (int i = 0; i < n; i++) {
         sumX += x[i];
@@ -18,7 +13,7 @@ void calculateSums(vector<double>& x,vector<double>& y, double& sumX, double& su
 }
 
 void curveFitting(vector<double>& x,vector<double>& y, double& b, double& a) {
-    double sumX, sumY, sumX2, sumXY;
+    double sumX=0, sumY=0, sumX2=0, sumXY=0;
     calculateSums(x, y, sumX, sumY, sumX2, sumXY);
     
     int n = x.size();
