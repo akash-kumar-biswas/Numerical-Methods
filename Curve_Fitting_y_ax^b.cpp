@@ -1,9 +1,7 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 void calculateSums(vector<double>& x,vector<double>& y, double& sumX, double& sumX2, double& sumY, double& sumXY) {
-
     int n = x.size();
     for (int i = 0; i < n; i++) {
         double xi = x[i];
