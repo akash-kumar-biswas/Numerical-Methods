@@ -19,11 +19,6 @@ void findInterval(double *a, double *b, double step) {
 }
 
 void falsePosition(double a, double b, int maxIter) {
-
-    if (f(a)*f(b) >= 0) {
-        cout<<"Error. f(a) and f(b) must have opposite signs."<<endl;
-        return;
-    }
     
     double c ; 
     int iter = 0;
